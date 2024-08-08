@@ -150,7 +150,7 @@ export default function Textform(props) {
         <>
             <div className='main mt-4'>
                 <div className="container text-center my-4" style={{ color: props.mode === 'dark' ? 'white' : '#212529' }}>
-                    <h1 className='my-4 '>{props.heading}</h1>
+                    <h1 className='mb-4 '>{props.heading}</h1>
                     <div className="mb-3">
                         <textarea className="form-control" value={text} style={{ backgroundColor: props.mode === 'dark' ? '#212529' : '#f8f9fa', color: props.mode === 'dark' ? 'white' : '#212529' }} onChange={handleOnChange} id="myBox" rows="8"></textarea>
                     </div>
@@ -186,7 +186,7 @@ export default function Textform(props) {
                     <p>Number Of Comma : {text.split(",").length - 1} </p>
                     <p>Number Of Question Mark : {text.split("?").length - 1} </p>
                     <p>Number Of Exclamation Mark : {text.split("!").length - 1} </p>
-                    <p>Minutes To Read : {0.008 * text.split(" ").length} </p>
+                    <p>Minutes To Read : {0.008 * text.split(" ").filter((element)=>{return element.length!==0}).length} </p>
                     <h3 className="text-center">Preview Document </h3>
                     <div className="content">
                         <textarea className="form-control" id="text" rows="3" value={text} style={{ backgroundColor: props.mode === 'dark' ? '#212529' : '#f8f9fa', color: props.mode === 'dark' ? 'white' : '#212529' }} onChange={handleOnChange} disabled></textarea>

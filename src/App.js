@@ -42,26 +42,17 @@ function App() {
       <Alerts alert={alert} />
       <div className="container">
           <Routes>
-            <Route path="/" element={<Textform heading="Enter text to analyze"  mode={mode} showAlert={showAlert} />}>
+            <Route path="/" element={<Textform heading="TextUtils - Transform Your Text with One Click"  mode={mode} showAlert={showAlert} />}>
             </Route>
             <Route path="/about" element={<About mode={mode} showAlert={showAlert}/>}>
             </Route>
             <Route path="/features" element={<Features mode={mode} showAlert={showAlert}/>}>
             </Route>
-            <Route path="*" element={<Textform heading="Enter text to analyze" mode={mode} showAlert={showAlert} />}>
+            <Route path="*" element={<Textform heading="TextUtils - Transform Your Text with One Click" mode={mode} showAlert={showAlert} />}>
             </Route>
           </Routes>
         </div>
-    </BrowserRouter>
-      {/* <Navbar title="TextUtils" aboutText="About" />
-      {/* <Navbar/> */}
-      {/* <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} /> */}
-      {/* <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} /> */}
-      {/* <Alerts alert={alert} /> */}
-      {/* <div className="container my-3"> */}
-      {/* <Textform showAlert={showAlert} heading="Enter Your Text To Analyze" mode={mode} /> */}
-       {/* </About> */}
-       {/* </div> */}
+    </BrowserRouter> 
     </>
   );
 }

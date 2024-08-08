@@ -29,8 +29,8 @@ export default function About(props) {
             <div className="container text-center my-4" style={{ color: props.mode === 'dark' ? 'white' : '#212529' }}>
                 <h1 className='my-4 '>Created By :</h1>
                 <p>TextUtils is created and maintained by <strong>Muhammad Ahmed</strong>.</p>
-                <p><strong>GitHub :</strong><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://github.com/MuhammadAhmed-fe"> MuhammadAhmed-GitHub</a></p>
-                <p><strong>Linked In :</strong><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="http://linkedin.com/in/muhammad-ahmed-828552321"> MuhammadAhmed-LinkedIn</a></p>
+                <p><strong>GitHub :</strong><a className="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://github.com/MuhammadAhmed-fe"> MuhammadAhmed-GitHub</a></p>
+                <p><strong>Linked In :</strong><a className="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="http://linkedin.com/in/muhammad-ahmed-828552321"> MuhammadAhmed-LinkedIn</a></p>
                 <p><strong>Email :</strong> muhammadahmed.fe@gmail.com</p>
                 <p>Feel free to reach out via GitHub, LinkedIn or email for any queries, feedback, or suggestions.</p>
             </div>

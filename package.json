@@ -1,7 +1,7 @@
 {
   "name": "firstapp",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "homepage": "https://MuhammadAhmed-fe.github.io/TextUtils",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

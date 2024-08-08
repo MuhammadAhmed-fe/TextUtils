@@ -104,15 +104,11 @@
             <h3 class="fadeIn">PAGE NOT FOUND</h3>
         </div>
     </div>
-    <!-- <script type="text/javascript">
-        // Redirect to the base URL of your GitHub Pages site
-        window.location.href = '/';
-    </script> -->
     <script type="text/javascript">
-        // Redirect to the base URL and preserve the path
-        const redirectTo = window.location.pathname;
-        window.location.href = '/' + redirectTo.substring(1);
-      </script>
+        setTimeout(function() {
+            window.location.href = '/';
+        }, 3000); 
+    </script>
 </body>
 
 </html>

@@ -3,14 +3,12 @@ import React, { useState } from 'react'
 export default function Textform(props) {
     const [text, setText] = useState('');
     const handleUpClick = () => {
-        // console.log("Uppercase was clicked" + text);
         let newText = text.toUpperCase();
         setText(newText);
         props.showAlert("Text Has Been Converted To Upper Case", "success");
     };
 
     const handleLowClick = () => {
-        // console.log("Uroiiopppercase was clicked" + text);
         let newText = text.toLowerCase();
         setText(newText);
         props.showAlert("Text Has Been Converted To Lower Case", "success")
@@ -61,7 +59,6 @@ export default function Textform(props) {
     };
 
     const handleInverseClick = () => {
-        // console.log("inverse click is triggered");
         let newtext = "";
         for (let i = text.length - 1; i >= 0; i--) {
             newtext += text[i];
@@ -95,7 +92,6 @@ export default function Textform(props) {
     };
 
     const handleClearClick = () => {
-        // console.log("Uppercase was clicked" + text);
         let newText = '';
         setText(newText);
         props.showAlert("Text Has Been Cleared", "success")
@@ -118,7 +114,6 @@ export default function Textform(props) {
     };
 
     const handleOnChange = (event) => {
-        // console.log("On Change");qewruiopqweq
         setText(event.target.value);
     }
 
@@ -180,7 +175,7 @@ export default function Textform(props) {
                 <div className="container my-2" style={{ color: props.mode === 'dark' ? 'white' : '#212529' }}>
                     <h2>Your Text Summary :</h2>
 
-                    <p>Number Of Words : {text.split(" ").length - 1} </p>
+                    <p>Number Of Words : {text.split(/\s+/).length - 1} </p>
                     <p>Number Of Characters : {text.length} </p>
                     <p>Number Of Sentences : {text === "" ? text.trim().split(".").filter((text) => text !== "").length : text.split(".").length - 1} </p>
                     <p>Number Of Comma : {text.split(",").length - 1} </p>
